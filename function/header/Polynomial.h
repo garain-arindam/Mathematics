@@ -19,7 +19,7 @@ namespace polynomial
         int degree;
         // linked list for storing the coefficients of the polynomial
         // order of entries: (an,an-1,...,a1,a0)
-        std::vector<double> poly;
+        std::vector<double> coefficients;
         
         public:
             
@@ -33,7 +33,7 @@ namespace polynomial
             * @param degree Degree of the polynomial.
             * @param coefficients Vector of coefficients.
             */
-            Polynomial (int degree, const std::vector<double> coefficient);
+            Polynomial (int degree, const std::vector<double> coefficients);
 
             /**
             * @brief Evaluates the polynomial at a given value of x.
